@@ -1,7 +1,5 @@
 package com.algorithm.lectures.week02;
 
-import javafx.geometry.Pos;
-
 import java.util.*;
 
 public class ClosestPoints {
