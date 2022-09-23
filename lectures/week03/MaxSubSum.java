@@ -5,6 +5,7 @@ import java.util.*;
 public class MaxSubSum {
     /**
      * Return the max sum of subarray of the array given
+     *
      * @param a the array
      * @return the max sum
      */
