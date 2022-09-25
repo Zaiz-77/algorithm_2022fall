@@ -5,6 +5,13 @@ import java.util.*;
 public class Matrix {
     private final StringBuilder res = new StringBuilder();
 
+    /**
+     * Get the correct way to add parentheses from l to r
+     *
+     * @param p the position array
+     * @param l the left end
+     * @param r the right end
+     */
     private void dfs(int[][] p, int l, int r) {
         if (l == r) {
             res.append("A").append(l + 1);
@@ -17,6 +24,12 @@ public class Matrix {
         res.append(")");
     }
 
+    /**
+     * Calc the min cost of add parentheses
+     *
+     * @param a an array that represents the rows and columns of a matrix
+     * @return the min cost
+     */
     public long minCount(int[][] a) {
         int n = a.length;
         int[][] p = new int[n][n];
@@ -44,12 +57,11 @@ public class Matrix {
     public static void main(String[] args) {
         Matrix solve = new Matrix();
         int[][] a = {
-                {30, 35},
-                {35, 15},
-                {15, 5},
-                {5, 10},
-                {10, 20},
-                {20, 25}
+                {20, 30},
+                {30, 25},
+                {25, 17},
+                {17, 23},
+                {23, 14},
         };
         System.out.println(solve.minCount(a));
         System.out.println(solve.res);
