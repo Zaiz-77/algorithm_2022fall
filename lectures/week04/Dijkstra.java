@@ -6,9 +6,6 @@ public class Dijkstra {
     static class Node {
         int no, len;
 
-        public Node() {
-        }
-
         public Node(int no, int len) {
             this.no = no;
             this.len = len;
